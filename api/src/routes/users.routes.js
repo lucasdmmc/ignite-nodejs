@@ -3,10 +3,10 @@ const { Router } = require("express");
 const usersRoutes = Router();
 
 const UsersController = require("../controllers/UsersController");
-const userControler = new UsersController();
+const userController = new UsersController();
 
 
-usersRoutes.post("/", userControler.create)
-usersRoutes.put("/:id", userControler.update)
+usersRoutes.post("/", userController.create)
+usersRoutes.put("/:id", userController.update)
 
 module.exports = usersRoutes

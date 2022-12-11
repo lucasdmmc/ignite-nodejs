@@ -4,13 +4,15 @@
   "description": "API desenvolvida no programa Explorer da Rocketseat",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/server.js"
+    "start": "nodemon src/server.js",
+    "migrate": "knex migrate:latest"
   },
   "author": "Lucas Carvalho",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.18.2",
+    "knex": "^2.3.0",
     "sqlite": "^4.1.2",
     "sqlite3": "^5.1.2"
   },
